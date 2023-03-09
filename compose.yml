@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     image:
-      otho/r-py-vscode
+      otho/explore-satellite
     env_file:
       - .env
     volumes:
