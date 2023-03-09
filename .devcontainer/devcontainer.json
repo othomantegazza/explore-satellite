@@ -1,0 +1,40 @@
+{
+	"name": "Basic R Container",
+	"dockerComposeFile": "../compose.yml",
+    "service": "app",
+	"workspaceFolder": "/project",
+	"settings": { 
+		"terminal.integrated.profiles.linux": {
+			"bash": {
+				"path": "/bin/bash",
+			}
+		},
+		"python.defaultInterpreterPath": "/usr/local/bin/python",
+		"python.languageServer": "Default",
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": true,
+		"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+		"python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+		"python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
+		"python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
+		"python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
+		"python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
+		"python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
+		"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
+		"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
+	},
+	"extensions": [
+		"quarto.quarto",
+		"ms-azuretools.vscode-docker",
+		"ms-python.python",
+		"rdebugger.r-debugger",
+		"ms-vscode-remote.remote-containers",
+		"yzhang.markdown-all-in-one",
+		"reditorsupport.r",
+		"redhat.vscode-yaml",
+		"REditorSupport.r",
+		"REditorSupport.r-lsp", 
+		"RDebugger.r-debugger",
+		"christian-kohler.path-intellisense",
+	]
+}
