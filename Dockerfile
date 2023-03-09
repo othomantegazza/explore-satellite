@@ -36,10 +36,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY requirements.txt requirements.txt
 
 RUN apt update && apt-get install -y --no-install-recommends \
-    software-properties-common \
-    && add-apt-repository -y ppa:deadsnakes/ppa \
-    && apt update 
-
+    software-properties-common 
+    
 RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-${OS_TYPE}.sh -O ~/miniconda.sh \
     && /bin/bash ~/miniconda.sh -b -p /opt/conda \
     && export PATH=/opt/conda/bin:$PATH \
