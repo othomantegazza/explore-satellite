@@ -30,6 +30,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     vim \
     libgit2-dev \
+    libgdal-dev \
     && rm -rf /var/lib/apt/lists/*
 
 
