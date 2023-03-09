@@ -45,7 +45,8 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-${O
     && conda init bash \
     && conda install conda-build \
     && conda install pip \
-    && pip install -r requirements.txt
+    && pip install -r requirements.txt \
+    && conda install -y -c conda-forge libstdcxx-ng
 
 RUN . /root/.bashrc \
     && conda create -y --name $CONDA_ENV python=$PYTHON_VER
